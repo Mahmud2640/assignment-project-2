@@ -55,6 +55,16 @@
    display: none;
  }
 
+ /* add logo  */
+ .add-logo{
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+ }
+ hr{
+  border: 1px solid #D1D1D1;
+  margin-bottom: 27px;
+ }
  /*============ add top section ============= */
 
  .container{
@@ -70,7 +80,7 @@
    white-space: nowrap;
    position: relative;
    color: transparent;
-   font-family: Fira Sans;
+   font-family: 'Fira Sans';
 }
 .banner-left{
    flex: 1;
@@ -115,6 +125,53 @@
    color: #22bedd;
 }
 
+/* ========== main ======= */
+.product-container {
+  width: auto;
+  display: grid;
+  column-gap: 30px;
+  row-gap: 27px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 20px;
+  margin-top: 25px;
+}
+.box {
+  width: 310px;
+  height: 500px;
+  padding: 15px 15px 33px 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border-radius: 15px;
+}
+.box img {
+  width: 100%;
+  border-radius: 10px;
+}
+.box h2 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #18191F;
+  margin: 16px 0 10px 0;
+}
+.box p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #6C6C6C;
+  text-align: justify;
+  margin-top: 0;
+  line-height: 170%;
+}
+
+/* =========== Main section end ===========  */
+
+.see-more{
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 
  @media (max-width: 952px){
    label.logo{
@@ -154,9 +211,4 @@
    #check:checked ~ ul{
      left: 0;
    }
- }
- section{
-   background: url(bg1.jpg) no-repeat;
-   background-size: cover;
-   height: calc(100vh - 80px);
  }
