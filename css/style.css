@@ -8,6 +8,7 @@
  }
  body{
    font-family: 'Fira Sans';
+   background: #ECF0F3;
  }
  nav{
    background: #0082e6;
@@ -60,6 +61,7 @@
    display: flex;
    justify-content: space-between;
    text-align: center;
+   margin-bottom: 40px;
  }
  hr{
   border: 1px solid #D1D1D1;
@@ -146,6 +148,17 @@
    color: #22bedd;
 }
 
+/* add feature img  */
+.feature-img{
+  border: 0px solid #c0c4c6;
+  border-radius: 10%;
+  transition: 1s;
+  margin-left: 10px;
+}
+.feature-img:hover{
+  transform: rotate(40deg);
+}
+
 /* ========== main ======= */
 .title-text{
   display: grid;
@@ -229,9 +242,10 @@ footer {
   color:white;
   margin-bottom: 0px;
 }
-
-
-
+.see-more a{
+  text-decoration: none;
+  color: #ff014f;
+}
 .see-more{
   margin-top: 50px;
   padding: 20px;
