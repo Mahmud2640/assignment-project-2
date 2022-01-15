@@ -56,7 +56,7 @@
    display: none;
  }
 
- /* add logo  */
+ /* ======= add logo ======== */
  .add-logo{
    display: flex;
    justify-content: space-between;
@@ -80,12 +80,18 @@
  .last-banner{
   display: flex;
   height: 50vh;
+  margin-top: 100px;
  }
+ .last-banner img{
+   height: 500px;
+   width: 500px;
+ }
+
  .banner-title{
-   font-size: 3vw;
+   font-size: 8vw;
    position: relative;
    color: white;
-   -webkit-text-stroke: 0.3vw #a82fc0;
+   -webkit-text-stroke: 0.3vw #ff014f;
    text-transform: uppercase;
 
 }
@@ -112,14 +118,14 @@
    -webkit-text-stroke: 0vw #383d52;
    border-right: 3px solid #01fe87;
    overflow: hidden;
-   animation: animate 6s linear infinite;
+   animation: animate 5s linear infinite;
 }
 @keyframes animate{
   0%,10%,100%{
     width: 0;
   }
   70%,90%{
-    width: 100%;
+    width: 88%;
   }
   0%{
     width: 0;
@@ -350,6 +356,10 @@ footer {
       align-items: center;
       margin-top: 80px;
   }
+  .last-banner img{
+    height: auto;
+    width: auto;
+  }
   .banner-title {
       font-size: 30px;
   }
@@ -445,6 +455,10 @@ footer {
       justify-content: space-around;
       align-items: center;
       margin-top: 70px;
+  }
+  .last-banner img{
+    height: auto;
+    width: auto;
   }
   .bonus-text {
       margin-bottom: 50px;
